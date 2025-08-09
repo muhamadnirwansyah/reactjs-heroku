@@ -6,25 +6,23 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview",
-    "start": "vite preview --port $PORT --host",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install && npm run build"
+    "start": "node server.js",
+    "heroku-postbuild": "npm run build"
   },
   "dependencies": {
-   "@emotion/react": "^11.14.0",
-  "@emotion/styled": "^11.14.1",
-  "@mui/icons-material": "^7.2.0",
-  "@mui/material": "^7.2.0",
-  "@mui/x-date-pickers": "^8.9.0",
-  "axios": "^1.10.0",
-  "dayjs": "^1.11.13",
-  "react": "^19.1.0",
-  "react-dom": "^19.1.0",
-  "react-router-dom": "^7.7.0",
-  "typescript": "~5.8.3",
-  "vite": "^7.0.4",
-  "@vitejs/plugin-react": "^4.6.0"
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/icons-material": "^7.2.0",
+    "@mui/material": "^7.2.0",
+    "@mui/x-date-pickers": "^8.9.0",
+    "axios": "^1.10.0",
+    "dayjs": "^1.11.13",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^7.7.0",
+    "typescript": "~5.8.3",
+    "vite": "^7.0.4",
+    "@vitejs/plugin-react": "^4.6.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.30.1",
