@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "start": "vite preview --port $PORT --host",
-    "heroku-postbuild": "npm install && npm run build"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install && npm run build"
   },
   "dependencies": {
    "@emotion/react": "^11.14.0",
@@ -39,6 +39,7 @@
     "postcss": "^8.5.6",
     "tailwindcss": "^4.1.11",
     "typescript": "~5.8.3",
-    "typescript-eslint": "^8.35.1"
+    "typescript-eslint": "^8.35.1",
+    "vite": "^7.0.4"
   }
 }
